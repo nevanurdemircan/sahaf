@@ -16,6 +16,7 @@ public class BookStore extends BaseEntity {
     private String phoneNumber;
 
     @OneToMany(mappedBy = "book")
+
     private List<BookInBookStore> bookInBookStores;
 
     @OneToMany(mappedBy = "bookStore")
